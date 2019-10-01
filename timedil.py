@@ -29,7 +29,7 @@ def main():
     group.add_argument('-s', '--speed', type=Decimal,
                        help="Speed expressed as a multiple of the speed of light. \
                        Speed of light = 1")
-    group.add_argument('-m', '--meterspersec', type=Decimal,
+    group.add_argument('-ms', '--meterspersec', type=Decimal,
                        help="Speed expressed in meters per second")
     parser.add_argument('-l', '--lightyears', type=Decimal, default=1,
                         help='Light-years to travel')
@@ -37,6 +37,8 @@ def main():
                         help='Length of your ship in meters')
     parser.add_argument('-p', '--precision', type=int, default=10,
                         help="Number of decimal places. Defaults to 6.")
+    parser.add_argument('-m', '--mass', type=Decimal, default=10,
+                        help="Mass of your ship in tons. Defaults to 10.")
     args = parser.parse_args()
 
     if not args.speed and not args.meterspersec:
@@ -63,21 +65,25 @@ def main():
         gamma = Decimal('Infinity')
         ship_time = 0
         ship_length = 0
+        ship_mass = args.mass * gamma
     else:
         gamma = Decimal(1 / (abs(1 - B) ** 0.5))
         ship_time = obs_time / gamma
         ship_length = args.shiplength / gamma
+        ship_mass = args.mass * gamma
 
     time_diff = abs(obs_time - ship_time)
 
     print("Lightyears to travel: ", args.lightyears)
-    print("Speed in m/s: ", f'{v:,}',"m/s")
+    print("Speed in m/s: ", f'{v:,}', "m/s")
     print("Percent of c: ", (v / c)*100, "%")
     print("Lorentz Factor: ", Decimal(gamma))
     print("Observer Time: ", time_breakdown(obs_time))
     print("Ship Time: ", time_breakdown(ship_time))
     print("Difference in times: ", time_breakdown(time_diff))
     print("Ship Length: ", ship_length, " meters")
+    print("Ship mass(at rest): ", args.mass, " tons")
+    print("Ship mass: ", ship_mass, " tons")
 
 
 if __name__ == "__main__":
