@@ -65,12 +65,12 @@ def main():
         gamma = Decimal('Infinity')
         ship_time = 0
         ship_length = 0
-        ship_mass = args.mass * gamma
     else:
         gamma = Decimal(1 / (abs(1 - B) ** 0.5))
         ship_time = obs_time / gamma
         ship_length = args.shiplength / gamma
-        ship_mass = args.mass * gamma
+        
+    ship_mass = args.mass * gamma
 
     time_diff = abs(obs_time - ship_time)
 
