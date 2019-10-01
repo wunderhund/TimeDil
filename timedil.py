@@ -65,7 +65,7 @@ def main():
         ship_length = 0
     else:
         gamma = Decimal(1 / (abs(1 - B) ** 0.5))
-        ship_time = obs_time * gamma
+        ship_time = obs_time / gamma
         ship_length = args.shiplength / gamma
 
     print("Lightyears to travel: ", args.lightyears)
