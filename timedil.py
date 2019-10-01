@@ -82,8 +82,7 @@ def main():
     print("Ship Time: ", time_breakdown(ship_time))
     print("Difference in times: ", time_breakdown(time_diff))
     print("Ship Length: ", ship_length, " meters")
-    print("Ship mass(at rest): ", args.mass, " tons")
-    print("Ship mass: ", ship_mass, " tons")
+    print("Ship Mass: ", ship_mass, " tons")
 
 
 if __name__ == "__main__":

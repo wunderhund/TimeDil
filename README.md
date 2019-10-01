@@ -35,8 +35,7 @@ Observer Time:  8 years, 7 months, 6 days, 2 hours, 5 minutes, 54 seconds
 Ship Time:  7 years, 5 months, 11 days, 9 hours, 4 minutes, 19 seconds
 Difference in times:  1 years, 1 months, 25 days, 3 hours, 30 minutes, 38 seconds
 Ship Length:  8.660254038  meters
-Ship mass(at rest):  10  tons
-Ship mass:  11.54700538  tons
+Ship Mass:  11.54700538  tons
 ```
 
 The `--meterspersec` option lets you specify speeds in meters per second (m/s) instead. So, for example, if you want to find out how long it would take for Voyager 1 to reach Proxima Centauri (if it was going that way, which it isn't), you could do:
@@ -50,8 +49,7 @@ Observer Time:  75,829 years, 10 months, 8 days, 15 hours, 45 minutes, 16 second
 Ship Time:  75,829 years, 10 months, 8 days, 14 hours, 38 minutes, 36 seconds
 Difference in times:  0 years, 0 months, 0 days, 1 hours, 3 minutes, 6 seconds
 Ship Length:  9.999999984  meters
-Ship mass(at rest):  10  tons
-Ship mass:  10.00000002  tons
+Ship Mass:  10.00000002  tons
 ```
 
 The other options should be mostly self-explanatory:
@@ -70,8 +68,7 @@ Observer Time:  4 years, 3 months, 18 days, 6 hours, 17 minutes, 28 seconds
 Ship Time:  0 years, 0 months, 0 days, 0 hours, 0 minutes, 0 seconds
 Difference in times:  4 years, 3 months, 18 days, 6 hours, 17 minutes, 28 seconds
 Ship Length:  0  meters
-Ship mass(at rest):  10  tons
-Ship mass:  Infinity  tons
+Ship Mass:  Infinity  tons
 ```
 
 ## Superluminal velocities
@@ -91,8 +88,7 @@ Observer Time:  0 years, 0 months, 1 days, 0 hours, 51 minutes, 48 seconds
 Ship Time:  4 years, 3 months, 18 days, 6 hours, 16 minutes, 59 seconds
 Difference in times:  4 years, 3 months, 17 days, 5 hours, 25 minutes, 10 seconds
 Ship Length:  15159.99670  meters
-Ship mass(at rest):  10  tons
-Ship mass:  0.006596307504  tons
+Ship Mass:  0.006596307504  tons
 ```
 
 Interestingly, the multiple of _c_ where the ship and observer times match up is precisely at the mathematical constant _e_, which is the square root of 2: `1.414213562373095`:
@@ -106,8 +102,7 @@ Observer Time:  3 years, 0 months, 14 days, 19 hours, 32 minutes, 2 seconds
 Ship Time:  3 years, 0 months, 14 days, 19 hours, 32 minutes, 2 seconds
 Difference in times:  0 years, 0 months, 0 days, 0 hours, 0 minutes, 0 seconds
 Ship Length:  9.999999997  meters
-Ship mass(at rest):  10  tons
-Ship mass:  10.00000000  tons
+Ship Mass:  10.00000000  tons
 ```
 
 **Please note:** Values for speeds higher than the speed of light should be considered preliminary, pending further investigation.
