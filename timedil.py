@@ -68,12 +68,15 @@ def main():
         ship_time = obs_time / gamma
         ship_length = args.shiplength / gamma
 
+    time_diff = abs(obs_time - ship_time)
+
     print("Lightyears to travel: ", args.lightyears)
     print("Speed in m/s: ", f'{v:,}',"m/s")
     print("Percent of c: ", (v / c)*100, "%")
     print("Lorentz Factor: ", Decimal(gamma))
     print("Observer Time: ", time_breakdown(obs_time))
     print("Ship Time: ", time_breakdown(ship_time))
+    print("Difference in times: ", time_breakdown(time_diff))
     print("Ship Length: ", ship_length, " meters")
 
 
