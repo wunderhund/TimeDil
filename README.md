@@ -14,9 +14,9 @@ optional arguments:
   -ms METERSPERSEC, --meterspersec METERSPERSEC
                         Speed expressed in meters per second
   -l LIGHTYEARS, --lightyears LIGHTYEARS
-                        Light-years to travel
+                        Light-years to travel. Defaults to 1.
   -sl SHIPLENGTH, --shiplength SHIPLENGTH
-                        Length of your ship in meters
+                        Length of your ship in meters. Defaults to 10.
   -p PRECISION, --precision PRECISION
                         Number of decimal places. Defaults to 6.
   -m MASS, --mass MASS  Mass of your ship in tons. Defaults to 10.
