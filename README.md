@@ -91,7 +91,7 @@ Ship Length:  15159.99670  meters
 Ship Mass:  0.006596307504  tons
 ```
 
-Interestingly, the multiple of _c_ where the ship and observer times match up is precisely at the mathematical constant _e_, which is the square root of 2: `1.414213562373095`:
+Interestingly, the multiple of _c_ where the ship and observer times match up is precisely at the mathematical constant _e_, which is the square root of 2: `1.414213562373095...`:
 ```
 ~/wunderhund/timedil(master*) » ./timedil.py -s 1.414213562373095 -l 4.3                
 Lightyears to travel:  4.3
