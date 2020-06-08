@@ -73,11 +73,11 @@ Ship Mass:  Infinity  tons
 
 ## Superluminal velocities
 
-This script allows for the computation of faster-than-light values. This requires a small change in the Lorentz equation, taking the absolute value of the `(1-ß)` component of the denominator, which prevents higher-than-1 values of _c_ from causing this number to be negative, which leads to imaginary numbers.
+This script allows for the computation of faster-than-light values. This requires a small change in the Lorentz equation, taking the absolute value of the `(1-ß)` component of the denominator. This prevents higher-than-1 values of _c_ from causing the denominator to turn out negative, which leads to imaginary numbers.
 
 In the real universe (so far as we know), travel faster than the speed of light is impossible, as reflected by the imaginary numbers when the equation is completed correctly. However, playing around with this equation shows that taking the aboslute value of this component results in all of the same values at sub-luminal speeds, while creating a concept of "reverse dilation" for superlumnal velocities.
 
-In this setup, ships traveling at faster-than-light speeds continue to reach their destination in less and less time (from an outside observer's point of view), but make up for that speed by having more time take place on the ship. So, for example, if you were to travel to Proxima Centauri 4.3 light-years away at the equivalent of Warp 9 (1516_c_):
+In this setup, ships traveling at faster-than-light speeds continue to reach their destination in less and less time (from an outside observer's point of view), but make up for that speed by having more time take place on the ship. So, for example, if you were to travel to Proxima Centauri 4.3 light-years away at the equivalent of Warp 9 (1516 _c_):
 ```
 ~/wunderhund/timedil(master*) » ./timedil.py -s 1516 -l 4.3                             
 Lightyears to travel:  4.3
