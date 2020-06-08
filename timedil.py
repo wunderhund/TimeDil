@@ -34,9 +34,9 @@ def main():
     group.add_argument('-ms', '--meterspersec', type=Decimal,
                        help="Speed expressed in meters per second")
     parser.add_argument('-l', '--lightyears', type=Decimal, default=1,
-                        help='Light-years to travel')
+                        help='Light-years to travel. Defaults to 1.')
     parser.add_argument('-sl', '--shiplength', type=Decimal, default=10,
-                        help='Length of your ship in meters')
+                        help='Length of your ship in meters. Defaults to 10.')
     parser.add_argument('-p', '--precision', type=int, default=6,
                         help="Number of decimal places. Defaults to 6.")
     parser.add_argument('-m', '--mass', type=Decimal, default=10000,
